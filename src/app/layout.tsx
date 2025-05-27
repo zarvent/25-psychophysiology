@@ -12,8 +12,8 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: 'PSYCHO-NEXUS | Explora la Psique',
-  description: 'Explora la psicofisiología y dialoga con la IA de Phineas Gage. Un proyecto de Sebastian Zambrana para Psycho-Nexus.',
+  title: 'Psicofisiologia | Explora la Psique',
+  description: 'Explora la psicofisiología y dialoga con la IA de Phineas Gage. Un proyecto de Sebastian Zambrana para Psicofisiologia.',
 };
 
 export default function RootLayout({
