@@ -12,7 +12,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: 'Psycho-Nexus | Explorando la Mente',
+  title: 'PSYCHO-NEXUS | Explora la Psique',
   description: 'Explora la psicofisiología y dialoga con la IA de Phineas Gage. Un proyecto de Sebastian Zambrana para Psycho-Nexus.',
 };
 
@@ -22,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className={`${montserrat.variable} ${GeistSans.variable} ${GeistMono.variable} dark`}> {/* Defaulting to dark theme as per PRD, added font variables */}
+    <html lang="es" className={`${montserrat.variable} ${GeistSans.variable} ${GeistMono.variable}`}> {/* Removed 'dark' class to default to light theme */}
       <body className={`font-sans antialiased`}> {/* font-sans will pick up --font-geist-sans from html tag */}
         {children}
         <Toaster />
