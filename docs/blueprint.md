@@ -1,4 +1,4 @@
-# **App Name**: Psycho-Nexus
+# **App Name**: Psicofisiologia
 
 ## Core Features:
 
