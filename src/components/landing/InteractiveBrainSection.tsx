@@ -16,13 +16,13 @@ const brainTooltips = [
 
 export function InteractiveBrainSection() {
   return (
-    <section className="w-full py-12">
-      <Card className="bg-card/80 border-primary/30 shadow-2xl shadow-primary/10 backdrop-blur-md overflow-hidden">
+    <section className="w-full py-10 md:py-16">
+      <Card className="bg-card border border-[hsl(var(--border))]/50 shadow-lg hover:shadow-xl transition-shadow duration-300 backdrop-blur-sm overflow-hidden rounded-xl transform hover:scale-[1.02] transition-transform">
         <CardContent className="p-6 md:p-10">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-2 text-center">
+          <h2 className="text-3xl md:text-4xl font-semibold mb-3 text-center text-primary font-montserrat">
             El Cerebro Interactivo: Un Universo Interior
           </h2>
-          <p className="text-center text-muted-foreground mb-8 md:mb-12 max-w-2xl mx-auto">
+          <p className="text-center text-muted-foreground mb-10 md:mb-14 max-w-2xl mx-auto">
             Pasa el cursor sobre los puntos destacados para descubrir cómo diferentes áreas del cerebro influyen en nuestras emociones y cognición.
           </p>
           
@@ -30,7 +30,7 @@ export function InteractiveBrainSection() {
             <div className="animate-fadeIn" style={{ animationDelay: '0.5s', animationFillMode: 'both' }}>
               <Image
                 src="https://placehold.co/800x600.png"
-                alt="Modelo del Cerebro Humano"
+                alt="Modelo del Cerebro Humano con puntos interactivos"
                 layout="fill"
                 objectFit="contain"
                 className="rounded-lg"
@@ -39,8 +39,6 @@ export function InteractiveBrainSection() {
               />
             </div>
             
-            {/* Decorative SVG lines can be added here if desired, without complex animation for now */}
-
             {brainTooltips.map((tooltip, index) => (
               <div
                 key={tooltip.id}
@@ -54,7 +52,7 @@ export function InteractiveBrainSection() {
                 }}
               >
                 <InfoTooltip title={tooltip.title} description={tooltip.description} side={tooltip.side}>
-                  <PulsingDot colorClassName={index % 2 === 0 ? "bg-primary" : "bg-accent"} />
+                  <PulsingDot colorClassName={index % 2 === 0 ? "bg-primary" : "bg-accent"} size="md" />
                 </InfoTooltip>
               </div>
             ))}

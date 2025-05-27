@@ -11,7 +11,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Loader2, Sparkles, AlertTriangle, MessageSquare, User, Brain } from "lucide-react"; // Wand2 removed as Sparkles is used
+import { Loader2, Sparkles, AlertTriangle, MessageSquare, User, Brain } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const FormSchema = z.object({
@@ -62,16 +62,16 @@ export function AskPhineasGageSection() {
   };
 
   return (
-    <section className="w-full py-8 md:py-12">
-      <Card className="bg-card/90 border-primary/50 shadow-xl shadow-primary/20 backdrop-blur-lg rounded-xl">
-        <CardHeader className="text-center">
+    <section className="w-full">
+      <Card className="bg-card border border-[hsl(var(--border))]/60 shadow-lg hover:shadow-xl transition-shadow duration-300 backdrop-blur-sm rounded-xl">
+        <CardHeader className="text-center pt-6 sm:pt-8">
           <div className="flex items-center justify-center mb-3">
             <Brain className="h-10 w-10 text-primary animate-pulse-glow-primary" />
           </div>
-          <CardTitle className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary font-montserrat"> {/* Applied font-montserrat */}
+          <CardTitle className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary font-montserrat">
             Habla con "Phineas Gage" AI
           </CardTitle>
-          <CardDescription className="text-muted-foreground text-sm sm:text-base md:text-lg max-w-xl mx-auto mt-2">
+          <CardDescription className="text-muted-foreground text-sm sm:text-base md:text-lg max-w-xl mx-auto mt-2 px-2">
             Una IA entrenada con todo lo que hablo en mi exposicion , pregunta lo que quieras sobre psicofisiologia
           </CardDescription>
         </CardHeader>
@@ -87,7 +87,7 @@ export function AskPhineasGageSection() {
                     <FormControl>
                       <Textarea
                         placeholder="Ej: ¿Cómo se relacionan los procesos fisiológicos del cuerpo con los procesos mentales y conductuales?"
-                        className="min-h-[100px] sm:min-h-[120px] resize-none bg-input text-foreground border-border focus:border-primary focus:ring-primary text-base rounded-lg shadow-inner placeholder:text-muted-foreground" /* Ensured input uses new theme vars */
+                        className="min-h-[100px] sm:min-h-[120px] resize-none bg-input text-foreground border-[hsl(var(--border))] focus:border-primary focus:ring-2 focus:ring-primary/50 text-base rounded-lg placeholder:text-muted-foreground"
                         {...field}
                         aria-label="Campo de pregunta para Phineas Gage AI"
                       />
@@ -99,7 +99,7 @@ export function AskPhineasGageSection() {
               <Button 
                 type="submit" 
                 disabled={isLoading} 
-                className="w-full md:w-auto text-base py-3 px-8 bg-primary hover:bg-primary/80 text-primary-foreground rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 focus:ring-4 focus:ring-primary/50" /* Added focus ring */
+                className="w-full md:w-auto text-base py-3 px-8 bg-primary hover:bg-primary/80 text-primary-foreground rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 focus:ring-4 focus:ring-primary/50"
                 aria-label="Enviar pregunta a Phineas Gage AI"
               >
                 {isLoading ? (
@@ -118,16 +118,16 @@ export function AskPhineasGageSection() {
           </Form>
 
           {error && (
-            <Alert variant="destructive" className="mt-6 rounded-lg bg-destructive/10 border-destructive text-destructive-foreground"> {/* Adjusted alert style for dark theme */}
-              <AlertTriangle className="h-5 w-5 text-destructive-foreground" /> {/* Icon color matches text */}
+            <Alert variant="destructive" className="mt-6 rounded-lg bg-destructive/10 border-destructive text-destructive-foreground">
+              <AlertTriangle className="h-5 w-5 text-destructive" /> {/* Ensure icon color matches destructive variant text */}
               <AlertTitle>Error</AlertTitle>
               <AlertDescription>{error}</AlertDescription>
             </Alert>
           )}
 
           {askedQuestion && !error && (isLoading || answer) && (
-            <div className="mt-8 space-y-4 pt-6 border-t border-border/50">
-              <div className="flex items-start space-x-3 p-4 rounded-lg bg-muted/30 shadow"> {/* Adjusted background opacity */}
+            <div className="mt-8 space-y-4 pt-6 border-t border-[hsl(var(--border))]/50">
+              <div className="flex items-start space-x-3 p-4 rounded-lg bg-muted/50 shadow-sm">
                 <User className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
                 <div>
                   <p className="font-semibold text-accent">Tu Pregunta:</p>
@@ -136,14 +136,14 @@ export function AskPhineasGageSection() {
               </div>
               
               {isLoading && !answer && (
-                <div className="flex items-center justify-center p-4 space-x-3 rounded-lg bg-muted/30 shadow">
+                <div className="flex items-center justify-center p-4 space-x-3 rounded-lg bg-muted/50 shadow-sm">
                   <Loader2 className="h-6 w-6 text-primary animate-spin" />
                   <p className="text-primary">Phineas Gage está reflexionando...</p>
                 </div>
               )}
 
               {answer && (
-                <div className="flex items-start space-x-3 p-4 rounded-lg bg-muted/50 shadow-inner"> {/* Adjusted background opacity */}
+                <div className="flex items-start space-x-3 p-4 rounded-lg bg-muted shadow"> 
                   <MessageSquare className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold text-primary">Respuesta de Phineas Gage:</p>
@@ -156,9 +156,9 @@ export function AskPhineasGageSection() {
         </CardContent>
       </Card>
        <style jsx global>{`
-        @keyframes pulse-glow-primary { /* Adjusted for new primary color */
-          0%, 100% { opacity: 1; filter: drop-shadow(0 0 5px hsl(var(--primary))) drop-shadow(0 0 10px hsl(var(--primary) / 0.7)); }
-          50% { opacity: 0.8; filter: drop-shadow(0 0 10px hsl(var(--primary))) drop-shadow(0 0 20px hsl(var(--primary) / 0.5)); }
+        @keyframes pulse-glow-primary { 
+          0%, 100% { opacity: 1; filter: drop-shadow(0 0 3px hsl(var(--primary)/0.8)) drop-shadow(0 0 8px hsl(var(--primary) / 0.5)); }
+          50% { opacity: 0.8; filter: drop-shadow(0 0 8px hsl(var(--primary)/0.6)) drop-shadow(0 0 15px hsl(var(--primary) / 0.3)); }
         }
         .animate-pulse-glow-primary {
           animation: pulse-glow-primary 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;

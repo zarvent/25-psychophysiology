@@ -4,91 +4,80 @@
 
 @layer base {
   :root {
-    /* New Theme based on the provided image - Cartoon Pink Brain */
-    --background: 338 86% 76%; /* Vibrant Pink from image background */
-    --foreground: 30 35% 25%; /* Dark Brown from character's boots */
+    /* Refined Theme: Elegant Cartoon Pink Brain */
+    --background: 338 100% 98%; /* Very light, almost white, subtle pink */
+    --foreground: 30 35% 15%;   /* Deeper brown for stronger contrast */
 
-    --card: 338 80% 96%; /* Lighter Pink, almost off-white */
-    --card-foreground: 30 35% 25%; /* Dark Brown */
+    --card: 0 0% 100%;         /* Crisp white cards */
+    --card-foreground: 30 35% 20%; /* Dark brown for card text */
 
-    --popover: 338 80% 96%; /* Lighter Pink */
-    --popover-foreground: 30 35% 25%; /* Dark Brown */
+    --popover: 0 0% 100%;       /* Crisp white popovers */
+    --popover-foreground: 30 35% 20%;
 
-    --primary: 6 85% 73%; /* Brain's Peachy/Salmon Pink */
+    --primary: 6 85% 70%;     /* Slightly softer Brain's Peachy/Salmon Pink */
     --primary-foreground: 0 0% 100%; /* White for text on primary */
 
-    --secondary: 338 70% 85%; /* Softer, slightly desaturated version of background pink */
-    --secondary-foreground: 338 50% 40%; /* Darker text for secondary elements */
+    --secondary: 338 80% 92%;  /* Softer, lighter desaturated pink for secondary elements */
+    --secondary-foreground: 338 50% 30%; /* Darker, desaturated pink/purple text for secondary */
 
-    --muted: 338 70% 92%; /* Very light pink, for muted backgrounds */
-    --muted-foreground: 30 30% 45%; /* Softer brown for muted text */
+    --muted: 338 90% 96%;     /* Very light pink, for muted backgrounds (e.g., chat bubbles) */
+    --muted-foreground: 30 30% 40%; /* Softer brown for muted text */
 
-    --accent: 6 90% 68%; /* Deeper/more saturated version of Brain's Peachy Pink */
+    --accent: 325 75% 60%;    /* A more refined, slightly desaturated magenta/violet as accent */
     --accent-foreground: 0 0% 100%; /* White for text on accent */
     
     --destructive: 0 70% 60%; /* Standard Red */
     --destructive-foreground: 0 0% 98%; /* Light Text for Destructive */
 
-    --border: 338 70% 90%; /* Soft pink border, slightly darker than card */
-    --input: 338 80% 94%; /* Input background, similar to card but a bit more opaque */
-    --ring: 6 85% 73%; /* Primary color for rings (brain's peachy pink) */
+    --border: 338 60% 90%;     /* Softer, less saturated pink border */
+    --input: 338 100% 97%;    /* Very light pink input bg, distinct from card */
+    --ring: 6 85% 73%;         /* Primary color for rings (brain's peachy pink) */
 
-    --chart-1: 6 85% 73%; /* Primary */
-    --chart-2: 6 90% 68%; /* Accent */
-    --chart-3: 338 86% 76%; /* Background Pink */
-    --chart-4: 6 85% 65%; /* Darker Primary variant */
-    --chart-5: 6 90% 60%; /* Darker Accent variant */
+    --chart-1: 6 85% 70%; /* Primary */
+    --chart-2: 325 75% 60%; /* Accent */
+    --chart-3: 338 86% 80%; /* A mid-tone pink from the theme */
+    --chart-4: 6 85% 60%; /* Darker Primary variant */
+    --chart-5: 325 75% 50%; /* Darker Accent variant */
 
     --radius: 0.75rem; 
 
-    /* Sidebar variables adapted for the new pink theme */
-    --sidebar-background: 338 80% 94%; /* Slightly darker than card */
-    --sidebar-foreground: 30 35% 25%;  /* Dark Brown */
-    --sidebar-primary: 6 85% 73%;      /* Brain's Peachy Pink */
+    /* Sidebar variables adapted for the new elegant pink theme */
+    --sidebar-background: 338 90% 97%; /* Slightly darker than main background, but still very light */
+    --sidebar-foreground: 30 35% 20%;  /* Dark Brown */
+    --sidebar-primary: 6 85% 70%;      /* Brain's Peachy Pink (Primary) */
     --sidebar-primary-foreground: 0 0% 100%; /* White */
-    --sidebar-accent: 338 70% 92%;     /* Muted light pink (similar to --muted) */
+    --sidebar-accent: 338 80% 94%;     /* Muted light pink (similar to --muted but for active items) */
     --sidebar-accent-foreground: 30 35% 25%; /* Dark Brown */
-    --sidebar-border: 338 70% 90%;     /* Soft pink border */
+    --sidebar-border: 338 60% 92%;     /* Soft pink border for sidebar */
     --sidebar-ring: 6 85% 73%;         /* Brain's Peachy Pink */
   }
 
-  /* Previous Dark Theme (Electric Blue/Violet) - kept under .dark class */
+  /* Previous Dark Theme (Electric Blue/Violet) - kept under .dark class for potential future use */
   .dark {
-    --background: 210 14% 7%; /* Very Dark Blue (#101214) */
-    --foreground: 0 0% 95%; /* Near White */
-
-    --card: 210 14% 10%; /* Slightly Lighter Dark Blue */
-    --card-foreground: 0 0% 95%; /* Near White */
-
-    --popover: 210 14% 12%; /* Darker Popover BG */
-    --popover-foreground: 0 0% 95%; /* Near White */
-
-    --primary: 181 100% 74%; /* Electric Blue (#7DF9FF) */
-    --primary-foreground: 210 14% 7%; /* Very Dark Blue (Text on Electric Blue) */
-
-    --secondary: 190 70% 60%; /* Muted Blue for secondary elements */
-    --secondary-foreground: 210 14% 7%; /* Very Dark Blue (Text on Muted Blue) */
-
-    --muted: 210 10% 15%; /* Darker Grey/Desaturated Blue */
-    --muted-foreground: 210 10% 60%; /* Lighter Grey for muted text */
-
-    --accent: 261 100% 80%; /* Violet (#BE95FF) */
-    --accent-foreground: 210 14% 7%; /* Very Dark Blue (Text on Violet) */
-    
-    --destructive: 0 84.2% 60.2%; /* Default Red */
-    --destructive-foreground: 0 0% 98%; /* Default Light Text for Destructive */
-
-    --border: 210 14% 15%; /* Subtle Border for Dark Theme */
-    --input: 210 14% 12%; /* Input Background for Dark Theme */
-    --ring: 181 100% 74%; /* Electric Blue for rings */
-
+    --background: 210 14% 7%;
+    --foreground: 0 0% 95%;
+    --card: 210 14% 10%;
+    --card-foreground: 0 0% 95%;
+    --popover: 210 14% 12%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 181 100% 74%;
+    --primary-foreground: 210 14% 7%;
+    --secondary: 190 70% 60%;
+    --secondary-foreground: 210 14% 7%;
+    --muted: 210 10% 15%;
+    --muted-foreground: 210 10% 60%;
+    --accent: 261 100% 80%;
+    --accent-foreground: 210 14% 7%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 210 14% 15%;
+    --input: 210 14% 12%;
+    --ring: 181 100% 74%;
     --chart-1: 181 70% 60%;
     --chart-2: 261 70% 70%;
     --chart-3: 190 60% 50%;
     --chart-4: 181 80% 50%;
     --chart-5: 261 80% 60%;
-
-    /* Sidebar variables adapted for the dark theme */
     --sidebar-background: 210 14% 9%; 
     --sidebar-foreground: 0 0% 90%; 
     --sidebar-primary: 181 100% 74%; 
@@ -102,13 +91,13 @@
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border; /* Uses the new --border variable */
   }
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-geist-sans);
   }
-  h1, h2, h3, h4, .font-title { /* Apply Montserrat to titles */
+  h1, h2, h3, h4, .font-title { 
     font-family: var(--font-montserrat);
   }
 }

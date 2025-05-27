@@ -8,12 +8,12 @@ import { InteractiveBrainSection } from "@/components/landing/InteractiveBrainSe
 
 export default function Home() {
   return (
-    <main className="flex flex-col min-h-screen bg-gradient-to-br from-background to-background/80 via-background/90 overflow-x-hidden">
+    <main className="flex flex-col min-h-screen bg-gradient-to-br from-background to-background/90 via-background/95 overflow-x-hidden">
       {/* Hero Section - Two Columns */}
-      <div className="flex flex-col lg:flex-row items-stretch p-4 sm:p-6 md:p-8 gap-6 md:gap-8">
+      <div className="flex flex-col lg:flex-row items-stretch p-6 sm:p-8 md:p-10 gap-8 md:gap-10">
         {/* Left Column: Brain Image */}
         <div className="w-full lg:w-2/5 flex items-center justify-center lg:min-h-full animate-fadeInLeft">
-          <Card className="shadow-2xl rounded-xl overflow-hidden border-2 border-primary/30 aspect-square lg:aspect-auto lg:h-auto max-w-md lg:max-w-none w-full bg-card/80 backdrop-blur-md">
+          <Card className="shadow-xl hover:shadow-2xl transition-shadow duration-300 rounded-xl overflow-hidden border border-[hsl(var(--border))]/50 aspect-square lg:aspect-auto lg:h-auto max-w-md lg:max-w-none w-full bg-card backdrop-blur-sm transform hover:scale-[1.02] transition-transform">
             <Image
               src="https://ibb.co/d4QYwQhj" 
               alt="Ilustración de un cerebro humano avanzado con conexiones brillantes y estética futurista"
@@ -27,12 +27,12 @@ export default function Home() {
         </div>
 
         {/* Right Column: Text and Chat */}
-        <div className="w-full lg:w-3/5 flex flex-col justify-center py-8 lg:py-12 animate-fadeInRight space-y-6 md:space-y-8">
+        <div className="w-full lg:w-3/5 flex flex-col justify-center py-8 lg:py-12 animate-fadeInRight space-y-8 md:space-y-10">
           <section className="text-center lg:text-left">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-primary drop-shadow-[0_2px_5px_hsl(var(--primary)/0.5)] font-montserrat">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-primary drop-shadow-[0_2px_5px_hsl(var(--primary)/0.4)] font-montserrat">
               PSYCHO-NEXUS
             </h1>
-            <p className="mt-3 sm:mt-4 text-lg sm:text-xl md:text-2xl text-foreground/80 font-medium">
+            <p className="mt-4 sm:mt-5 text-lg sm:text-xl md:text-2xl text-foreground/80 font-medium">
               Sebastian Zambrana - <span className="text-accent font-semibold">Estudiante Licenciatura en Psicología</span>
             </p>
           </section>
@@ -41,7 +41,7 @@ export default function Home() {
         </div>
       </div>
       
-      <div className="p-4 sm:p-6 md:p-8">
+      <div className="p-6 sm:p-8 md:p-10">
         <InteractiveBrainSection />
       </div>
       
