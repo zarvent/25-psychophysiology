@@ -23,6 +23,12 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'i.ibb.co', // Added for direct image links from ibb.co
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
 };
