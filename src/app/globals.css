@@ -4,55 +4,55 @@
 
 @layer base {
   :root {
-    /* New Light Theme - "Psychology-Friendly & Dopaminergic" */
-    --background: 220 25% 97%; /* Very light, soft blue-gray */
-    --foreground: 220 15% 25%; /* Dark, desaturated blue for text */
+    /* New Theme based on the provided image - Cartoon Pink Brain */
+    --background: 338 86% 76%; /* Vibrant Pink from image background */
+    --foreground: 30 35% 25%; /* Dark Brown from character's boots */
 
-    --card: 0 0% 100%; /* White cards */
-    --card-foreground: 220 15% 25%;
+    --card: 338 80% 96%; /* Lighter Pink, almost off-white */
+    --card-foreground: 30 35% 25%; /* Dark Brown */
 
-    --popover: 0 0% 100%; /* White popovers */
-    --popover-foreground: 220 15% 25%;
+    --popover: 338 80% 96%; /* Lighter Pink */
+    --popover-foreground: 30 35% 25%; /* Dark Brown */
 
-    --primary: 200 70% 65%; /* Friendly, clear sky blue */
-    --primary-foreground: 0 0% 100%; /* White text on primary */
+    --primary: 6 85% 73%; /* Brain's Peachy/Salmon Pink */
+    --primary-foreground: 0 0% 100%; /* White for text on primary */
 
-    --secondary: 160 50% 75%; /* Soft, gentle mint/seafoam green */
-    --secondary-foreground: 160 30% 25%; /* Darker green for text */
+    --secondary: 338 70% 85%; /* Softer, slightly desaturated version of background pink */
+    --secondary-foreground: 338 50% 40%; /* Darker text for secondary elements */
 
-    --muted: 220 20% 90%; /* Light grayish blue */
-    --muted-foreground: 220 10% 50%; /* Softer gray text */
+    --muted: 338 70% 92%; /* Very light pink, for muted backgrounds */
+    --muted-foreground: 30 30% 45%; /* Softer brown for muted text */
 
-    --accent: 35 100% 70%; /* Cheerful, soft orange/apricot - "dopaminergic" */
-    --accent-foreground: 35 100% 15%; /* Dark brown for text on accent */
+    --accent: 6 90% 68%; /* Deeper/more saturated version of Brain's Peachy Pink */
+    --accent-foreground: 0 0% 100%; /* White for text on accent */
     
-    --destructive: 0 70% 60%; /* Default Red */
-    --destructive-foreground: 0 0% 98%; /* Default Light Text for Destructive */
+    --destructive: 0 70% 60%; /* Standard Red */
+    --destructive-foreground: 0 0% 98%; /* Light Text for Destructive */
 
-    --border: 220 20% 88%; /* Softer border */
-    --input: 220 25% 95%; /* Input background, slightly off-white */
-    --ring: 200 70% 65%; /* Primary color for rings */
+    --border: 338 70% 90%; /* Soft pink border, slightly darker than card */
+    --input: 338 80% 94%; /* Input background, similar to card but a bit more opaque */
+    --ring: 6 85% 73%; /* Primary color for rings (brain's peachy pink) */
 
-    --chart-1: 200 70% 65%;
-    --chart-2: 35 100% 70%;
-    --chart-3: 160 50% 75%;
-    --chart-4: 200 70% 55%;
-    --chart-5: 35 100% 60%;
+    --chart-1: 6 85% 73%; /* Primary */
+    --chart-2: 6 90% 68%; /* Accent */
+    --chart-3: 338 86% 76%; /* Background Pink */
+    --chart-4: 6 85% 65%; /* Darker Primary variant */
+    --chart-5: 6 90% 60%; /* Darker Accent variant */
 
     --radius: 0.75rem; 
 
-    /* Sidebar variables adapted for the new light theme */
-    --sidebar-background: 220 25% 95%; 
-    --sidebar-foreground: 220 15% 25%; 
-    --sidebar-primary: 200 70% 65%; 
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 220 20% 90%;
-    --sidebar-accent-foreground: 220 15% 25%;
-    --sidebar-border: 220 20% 85%;
-    --sidebar-ring: 200 70% 65%;
+    /* Sidebar variables adapted for the new pink theme */
+    --sidebar-background: 338 80% 94%; /* Slightly darker than card */
+    --sidebar-foreground: 30 35% 25%;  /* Dark Brown */
+    --sidebar-primary: 6 85% 73%;      /* Brain's Peachy Pink */
+    --sidebar-primary-foreground: 0 0% 100%; /* White */
+    --sidebar-accent: 338 70% 92%;     /* Muted light pink (similar to --muted) */
+    --sidebar-accent-foreground: 30 35% 25%; /* Dark Brown */
+    --sidebar-border: 338 70% 90%;     /* Soft pink border */
+    --sidebar-ring: 6 85% 73%;         /* Brain's Peachy Pink */
   }
 
-  /* Previous Dark Theme (Electric Blue/Violet) - now under .dark class */
+  /* Previous Dark Theme (Electric Blue/Violet) - kept under .dark class */
   .dark {
     --background: 210 14% 7%; /* Very Dark Blue (#101214) */
     --foreground: 0 0% 95%; /* Near White */
