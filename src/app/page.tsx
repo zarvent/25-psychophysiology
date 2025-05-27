@@ -29,7 +29,7 @@ export default function Home() {
         {/* Right Column: Text and Chat */}
         <div className="w-full lg:w-3/5 flex flex-col justify-center py-8 lg:py-12 animate-fadeInRight space-y-8 md:space-y-10">
           <section className="text-center lg:text-left">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-primary drop-shadow-[0_2px_5px_hsl(var(--primary)/0.4)] font-montserrat">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-primary drop-shadow-[0_1px_2px_hsla(30,35%,15%,0.2)] font-montserrat">
               Psicofisiologia
             </h1>
             <p className="mt-4 sm:mt-5 text-lg sm:text-xl md:text-2xl text-foreground/80 font-medium">
@@ -65,3 +65,4 @@ export default function Home() {
     </main>
   );
 }
+
