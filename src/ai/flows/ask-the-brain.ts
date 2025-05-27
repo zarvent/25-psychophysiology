@@ -1,4 +1,6 @@
-// src/ai/flows/ask-the-brain.ts
+// This file is being replaced by ask-phineas-gage.ts and can be removed or archived.
+// Keeping it to avoid deletion errors if it's referenced elsewhere unexpectedly,
+// but its functionality is now in ask-phineas-gage.ts.
 'use server';
 
 /**
@@ -23,7 +25,9 @@ const AskTheBrainOutputSchema = z.object({
 export type AskTheBrainOutput = z.infer<typeof AskTheBrainOutputSchema>;
 
 export async function askTheBrain(input: AskTheBrainInput): Promise<AskTheBrainOutput> {
-  return askTheBrainFlow(input);
+  // This flow is deprecated in favor of askPhineasGage.
+  // Return a default message or error.
+  return { answer: "This AI endpoint is deprecated. Please use the Phineas Gage AI." };
 }
 
 const askTheBrainPrompt = ai.definePrompt({
@@ -44,7 +48,8 @@ const askTheBrainFlow = ai.defineFlow(
     outputSchema: AskTheBrainOutputSchema,
   },
   async input => {
-    const {output} = await askTheBrainPrompt(input);
-    return output!;
+     // This flow is deprecated.
+    const {output} = await askTheBrainPrompt(input); // Will use the deprecated prompt
+    return { answer: "This AI flow is deprecated. The Phineas Gage AI should be used instead." };
   }
 );

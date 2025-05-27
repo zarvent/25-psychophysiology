@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Psycho-Nexus: Psicofisiología y Mente',
-  description: 'Explora el puente entre biología y la mente humana con Psycho-Nexus.',
+  title: 'Psicofisiología | Sebastian Zambrana',
+  description: 'Explora la psicofisiología y habla con Phineas Gage AI. Un proyecto de Sebastian Zambrana.',
 };
 
 export default function RootLayout({
@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="es" className="light"> {/* Defaulting to light as per "blanco" primary color */}
       <body className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}>
         {children}
         <Toaster />

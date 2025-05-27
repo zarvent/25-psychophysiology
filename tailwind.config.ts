@@ -88,17 +88,18 @@ export default {
   					height: '0'
   				}
   			},
-        'pulse-glow': {
-          '0%, 100%': { opacity: '1', boxShadow: '0 0 5px hsl(var(--primary))' },
-          '50%': { opacity: '.7', boxShadow: '0 0 15px 3px hsl(var(--primary))' },
+        'pulse-glow-primary': { /* Renamed to avoid conflict if other pulse-glows exist */
+          '0%, 100%': { opacity: '1', filter: 'drop-shadow(0 0 4px hsl(var(--primary)))' },
+          '50%': { opacity: '.7', filter: 'drop-shadow(0 0 12px hsl(var(--primary)))' },
         }
   		},
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out',
-        'pulse-glow': 'pulse-glow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'pulse-glow-primary': 'pulse-glow-primary 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
   		}
   	}
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
+
