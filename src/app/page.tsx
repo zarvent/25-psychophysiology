@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { AskPhineasGageSection } from "@/components/landing/AskPhineasGageSection";
-import { InteractiveBrainSection } from "@/components/landing/InteractiveBrainSection"; // Importar la sección interactiva
 import { Card } from "@/components/ui/card";
 
 export default function Home() {
@@ -39,9 +38,6 @@ export default function Home() {
           <AskPhineasGageSection />
         </div>
       </div>
-
-      {/* Interactive Brain Section - Added below hero */}
-      <InteractiveBrainSection />
       
       <style jsx global>{`
         @keyframes fadeInLeft {
