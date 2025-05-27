@@ -16,7 +16,7 @@ export default function Home() {
           <Card className="transition-shadow duration-300 rounded-xl overflow-hidden aspect-square lg:aspect-auto lg:h-auto max-w-md lg:max-w-none w-full bg-transparent transform hover:scale-[1.02] transition-transform">
             <Image
               src="https://i.ibb.co/3m0Z90J4/cerebro-psico.png" 
-              alt="Ilustración de un cerebro humano avanzado con conexiones brillantes y estética futurista"
+              alt="Ilustración de un cerebro para PsicoFisiologia con conexiones brillantes"
               width={800}
               height={800}
               className="object-cover w-full h-full"
@@ -30,7 +30,7 @@ export default function Home() {
         <div className="w-full lg:w-3/5 flex flex-col justify-center py-8 lg:py-12 animate-fadeInRight space-y-8 md:space-y-10">
           <section className="text-center lg:text-left">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-primary drop-shadow-[0_1px_2px_hsla(30,35%,15%,0.2)] font-montserrat">
-              Psicofisiologia
+              PsicoFisiologia
             </h1>
             <p className="mt-4 sm:mt-5 text-lg sm:text-xl md:text-2xl text-foreground/80 font-medium">
               Sebastian Zambrana - <span className="text-accent font-semibold">Estudiante Licenciatura en Psicología</span>

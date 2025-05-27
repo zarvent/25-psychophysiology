@@ -1,3 +1,6 @@
+// This file is being replaced by ask-profesor-psicofisiologia.ts and can be removed or archived.
+// Keeping it to avoid deletion errors if it's referenced elsewhere unexpectedly,
+// but its functionality is now in ask-profesor-psicofisiologia.ts.
 'use server';
 /**
  * @fileOverview A Genkit flow for interacting with an AI embodying Phineas Gage.
@@ -21,7 +24,8 @@ const AskPhineasGageOutputSchema = z.object({
 export type AskPhineasGageOutput = z.infer<typeof AskPhineasGageOutputSchema>;
 
 export async function askPhineasGage(input: AskPhineasGageInput): Promise<AskPhineasGageOutput> {
-  return askPhineasGageFlow(input);
+  // This flow is deprecated
+  return { answer: "Este flujo de IA ha sido reemplazado. Por favor, use el flujo del Profesor de Psicofisiología."};
 }
 
 const askPhineasGagePrompt = ai.definePrompt({
@@ -42,7 +46,8 @@ const askPhineasGageFlow = ai.defineFlow(
     outputSchema: AskPhineasGageOutputSchema,
   },
   async input => {
+     // This flow is deprecated
     const {output} = await askPhineasGagePrompt(input);
-    return output!;
+    return { answer: "Este flujo de IA (Phineas Gage) está obsoleto. Utilice el nuevo flujo del Profesor de Psicofisiología." };
   }
 );
