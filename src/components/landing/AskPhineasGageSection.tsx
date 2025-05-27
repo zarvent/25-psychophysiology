@@ -84,7 +84,7 @@ export function AskPhineasGageSection() {
                     <FormLabel className="sr-only">Tu Pregunta a Phineas Gage</FormLabel>
                     <FormControl>
                       <Textarea
-                        placeholder="Ej: Phineas, ¿cómo cambió tu vida después del accidente?"
+                        placeholder="Ej: ¿Cómo se relacionan los procesos fisiológicos del cuerpo con los procesos mentales y conductuales?"
                         className="min-h-[100px] sm:min-h-[120px] resize-none bg-input/70 border-border focus:border-primary text-base rounded-lg shadow-inner"
                         {...field}
                         aria-label="Campo de pregunta para Phineas Gage AI"
