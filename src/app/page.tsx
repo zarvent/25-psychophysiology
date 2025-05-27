@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { AskPhineasGageSection } from "@/components/landing/AskPhineasGageSection";
 import { Card } from "@/components/ui/card";
+// import { InteractiveBrainSection } from "@/components/landing/InteractiveBrainSection"; // Removed as per user request
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
               width={800}
               height={800}
               className="object-cover w-full h-full"
-              data-ai-hint="futuristic brain"
+              data-ai-hint="futuristic brain network"
               priority
             />
           </Card>
@@ -38,6 +39,9 @@ export default function Home() {
           <AskPhineasGageSection />
         </div>
       </div>
+      
+      {/* InteractiveBrainSection was here, removed as per user request */}
+      {/* <InteractiveBrainSection /> */}
       
       <style jsx global>{`
         @keyframes fadeInLeft {
