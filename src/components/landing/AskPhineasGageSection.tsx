@@ -111,7 +111,7 @@ export function AskPhineasGageSection() { // Component name kept for now to avoi
                 ) : (
                   <>
                     <Sparkles className="mr-2 h-5 w-5" />
-                    Consultar al Profesor
+                    Consultar a Phineas 
                   </>
                 )}
               </Button>
@@ -139,7 +139,7 @@ export function AskPhineasGageSection() { // Component name kept for now to avoi
               {isLoading && !answer && (
                 <div className="flex items-center justify-center p-4 space-x-3 rounded-lg bg-muted/50 shadow-sm">
                   <Loader2 className="h-6 w-6 text-primary animate-spin" />
-                  <p className="text-primary">El Profesor está preparando su respuesta...</p>
+                  <p className="text-primary">Phineas está preparando su respuesta...</p>
                 </div>
               )}
 
@@ -147,7 +147,7 @@ export function AskPhineasGageSection() { // Component name kept for now to avoi
                 <div className="flex items-start space-x-3 p-4 rounded-lg bg-muted shadow"> 
                   <GraduationCap className="h-6 w-6 text-primary flex-shrink-0 mt-1" /> {/* Changed icon */}
                   <div>
-                    <p className="font-semibold text-primary">Respuesta del Profesor:</p>
+                    <p className="font-semibold text-primary">Respuesta de Phineas:</p>
                     <p className="text-foreground whitespace-pre-wrap">{answer}</p>
                   </div>
                 </div>

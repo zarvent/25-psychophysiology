@@ -28,15 +28,15 @@ export default function Home() {
         {/* Right Column: Text and Chat */}
         <div className="w-full lg:w-3/5 flex flex-col justify-center py-8 lg:py-12 animate-fadeInRight space-y-8 md:space-y-10">
           <section className="text-center lg:text-left">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-primary drop-shadow-[0_1px_2px_hsla(var(--foreground),0.2)] font-montserrat">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-primary drop-shadow-[0_1px_2px_hsla(var(--foreground),0.1)] font-montserrat">
               PsicoFisiologia
             </h1>
             <p className="mt-4 sm:mt-5 text-lg sm:text-xl md:text-2xl text-foreground/80 font-medium">
-              Sebastian Zambrana - <span className="text-accent font-semibold">Estudiante Licenciatura en Psicología</span>
+              Sebastian Zambrana - <span className="text-primary font-semibold">Estudiante de Licenciatura en Psicología</span>
             </p>
           </section>
 
-          <AskPhineasGageSection />
+          <AskPhineasGageSection /> {/* This component name is AskPhineasGageSection but functionality is Profesor AI */}
         </div>
       </div>
       
