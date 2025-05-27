@@ -22,8 +22,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className={`${montserrat.variable} ${GeistSans.variable} ${GeistMono.variable}`}> {/* Removed 'dark' class to default to light theme */}
-      <body className={`font-sans antialiased`}> {/* font-sans will pick up --font-geist-sans from html tag */}
+    <html lang="es" className={`${montserrat.variable} ${GeistSans.variable} ${GeistMono.variable}`}>
+      <body className={`font-sans antialiased`}>
         {children}
         <Toaster />
       </body>

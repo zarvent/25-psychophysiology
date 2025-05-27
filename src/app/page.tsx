@@ -15,7 +15,7 @@ export default function Home() {
         <div className="w-full lg:w-2/5 flex items-center justify-center lg:min-h-full animate-fadeInLeft">
           <Card className="shadow-2xl rounded-xl overflow-hidden border-2 border-primary/30 aspect-square lg:aspect-auto lg:h-auto max-w-md lg:max-w-none w-full bg-card/80 backdrop-blur-md">
             <Image
-              src="https://placehold.co/800x800.png" 
+              src="https://ibb.co/d4QYwQhj" 
               alt="Ilustración de un cerebro humano avanzado con conexiones brillantes y estética futurista"
               width={800}
               height={800}
