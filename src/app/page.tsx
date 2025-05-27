@@ -2,9 +2,8 @@
 'use client';
 
 import Image from "next/image";
-import { AskPhineasGageSection } from "@/components/landing/AskPhineasGageSection";
+import { AskPhineasGageSection } from "@/components/landing/AskPhineasGageSection"; // Name kept for now
 import { Card } from "@/components/ui/card";
-import { InteractiveBrainSection } from "@/components/landing/InteractiveBrainSection";
 
 export default function Home() {
   return (
@@ -15,12 +14,12 @@ export default function Home() {
         <div className="w-full lg:w-2/5 flex items-center justify-center lg:min-h-full animate-fadeInLeft">
           <Card className="transition-shadow duration-300 rounded-xl overflow-hidden aspect-square lg:aspect-auto lg:h-auto max-w-md lg:max-w-none w-full bg-transparent transform hover:scale-[1.02] transition-transform">
             <Image
-              src="https://i.ibb.co/3m0Z90J4/cerebro-psico.png" 
+              src="https://i.ibb.co/3m0Z90J4/cerebro-psico.png"
               alt="Ilustración de un cerebro para PsicoFisiologia con conexiones brillantes"
               width={800}
               height={800}
               className="object-cover w-full h-full"
-              data-ai-hint="psychology brain" 
+              data-ai-hint="psychology brain"
               priority
             />
           </Card>
@@ -29,7 +28,7 @@ export default function Home() {
         {/* Right Column: Text and Chat */}
         <div className="w-full lg:w-3/5 flex flex-col justify-center py-8 lg:py-12 animate-fadeInRight space-y-8 md:space-y-10">
           <section className="text-center lg:text-left">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-primary drop-shadow-[0_1px_2px_hsla(30,35%,15%,0.2)] font-montserrat">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-primary drop-shadow-[0_1px_2px_hsla(var(--foreground),0.2)] font-montserrat">
               PsicoFisiologia
             </h1>
             <p className="mt-4 sm:mt-5 text-lg sm:text-xl md:text-2xl text-foreground/80 font-medium">
@@ -41,9 +40,7 @@ export default function Home() {
         </div>
       </div>
       
-      <div className="p-6 sm:p-8 md:p-10">
-        <InteractiveBrainSection />
-      </div>
+      {/* InteractiveBrainSection was here and is now removed */}
       
       <style jsx global>{`
         @keyframes fadeInLeft {
@@ -65,4 +62,3 @@ export default function Home() {
     </main>
   );
 }
-
