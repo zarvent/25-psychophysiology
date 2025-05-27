@@ -12,11 +12,11 @@ export default function Home() {
         <Card className="shadow-2xl rounded-xl overflow-hidden border-2 border-primary/30 aspect-square lg:aspect-auto lg:h-auto max-w-md lg:max-w-none w-full bg-card/50 backdrop-blur-md">
           <Image
             src="https://placehold.co/800x800.png" 
-            alt="Ilustración de un cerebro humano con conexiones brillantes"
+            alt="Ilustración de un cerebro humano avanzado con conexiones brillantes y estética futurista"
             width={800}
             height={800}
             className="object-cover w-full h-full"
-            data-ai-hint="human brain connections glowing"
+            data-ai-hint="futuristic brain"
             priority
           />
         </Card>
