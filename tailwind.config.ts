@@ -13,6 +13,7 @@ export default {
       fontFamily: {
         sans: ["var(--font-geist-sans)", ...fontFamily.sans],
         mono: ["var(--font-geist-mono)", ...fontFamily.mono],
+        montserrat: ["var(--font-montserrat)", ...fontFamily.sans], // Added Montserrat
       },
   		colors: {
   			background: 'hsl(var(--background))',
@@ -88,9 +89,9 @@ export default {
   					height: '0'
   				}
   			},
-        'pulse-glow-primary': { /* Renamed to avoid conflict if other pulse-glows exist */
-          '0%, 100%': { opacity: '1', filter: 'drop-shadow(0 0 4px hsl(var(--primary)))' },
-          '50%': { opacity: '.7', filter: 'drop-shadow(0 0 12px hsl(var(--primary)))' },
+        'pulse-glow-primary': {
+          '0%, 100%': { opacity: '1', filter: 'drop-shadow(0 0 5px hsl(var(--primary))) drop-shadow(0 0 10px hsl(var(--primary) / 0.7))' },
+          '50%': { opacity: '.8', filter: 'drop-shadow(0 0 10px hsl(var(--primary))) drop-shadow(0 0 20px hsl(var(--primary) / 0.5))' },
         }
   		},
   		animation: {
@@ -102,4 +103,3 @@ export default {
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
-

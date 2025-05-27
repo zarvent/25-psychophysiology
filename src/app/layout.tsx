@@ -1,21 +1,19 @@
 import type {Metadata} from 'next';
-import {Geist, Geist_Mono} from 'next/font/google';
+import { Montserrat } from 'next/font/google';
+import { GeistSans } from 'geist/font/sans';
+import { GeistMono } from 'geist/font/mono';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const montserrat = Montserrat({
+  variable: '--font-montserrat',
   subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
-  title: 'Psicofisiología | Sebastian Zambrana',
-  description: 'Explora la psicofisiología y habla con Phineas Gage AI. Un proyecto de Sebastian Zambrana.',
+  title: 'Psycho-Nexus | Explorando la Mente',
+  description: 'Explora la psicofisiología y dialoga con la IA de Phineas Gage. Un proyecto de Sebastian Zambrana para Psycho-Nexus.',
 };
 
 export default function RootLayout({
@@ -24,8 +22,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className="light"> {/* Defaulting to light as per "blanco" primary color */}
-      <body className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}>
+    <html lang="es" className={`${montserrat.variable} ${GeistSans.variable} ${GeistMono.variable} dark`}> {/* Defaulting to dark theme as per PRD, added font variables */}
+      <body className={`font-sans antialiased`}> {/* font-sans will pick up --font-geist-sans from html tag */}
         {children}
         <Toaster />
       </body>
