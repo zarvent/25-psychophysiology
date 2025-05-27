@@ -70,7 +70,7 @@ export function AskPhineasGageSection() {
           </div>
           <CardTitle className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary">Habla con "Phineas Gage" AI</CardTitle>
           <CardDescription className="text-muted-foreground text-sm sm:text-base md:text-lg max-w-xl mx-auto mt-2">
-            Una IA entrenada con todo lo que hablo en mi exposición. Pregúntale sobre su vida y experiencias.
+            Una IA entrenada con todo lo que hablo en mi exposicion , pregunta lo que quieras sobre psicofisiologia
           </CardDescription>
         </CardHeader>
         <CardContent className="p-4 sm:p-6 md:p-8 space-y-6">
