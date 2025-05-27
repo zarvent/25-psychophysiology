@@ -13,7 +13,7 @@ export default function Home() {
       <div className="flex flex-col lg:flex-row items-stretch p-6 sm:p-8 md:p-10 gap-8 md:gap-10">
         {/* Left Column: Brain Image */}
         <div className="w-full lg:w-2/5 flex items-center justify-center lg:min-h-full animate-fadeInLeft">
-          <Card className="shadow-xl hover:shadow-2xl transition-shadow duration-300 rounded-xl overflow-hidden border border-[hsl(var(--border))]/50 aspect-square lg:aspect-auto lg:h-auto max-w-md lg:max-w-none w-full bg-card backdrop-blur-sm transform hover:scale-[1.02] transition-transform">
+          <Card className="transition-shadow duration-300 rounded-xl overflow-hidden aspect-square lg:aspect-auto lg:h-auto max-w-md lg:max-w-none w-full bg-transparent transform hover:scale-[1.02] transition-transform">
             <Image
               src="https://i.ibb.co/3m0Z90J4/cerebro-psico.png" 
               alt="Ilustración de un cerebro humano avanzado con conexiones brillantes y estética futurista"
