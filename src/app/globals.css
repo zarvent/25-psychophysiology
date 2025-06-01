@@ -17,10 +17,10 @@
     --primary: 6 85% 70%;     /* Slightly softer Brain's Peachy/Salmon Pink */
     --primary-foreground: 0 0% 100%; /* White for text on primary */
 
-    --secondary: 338 80% 92%;  /* Softer, lighter desaturated pink for secondary elements */
+    --secondary: 338 85% 95%;  /* Lighter, very desaturated pink for secondary elements (e.g., user chat bubble) */
     --secondary-foreground: 338 50% 30%; /* Darker, desaturated pink/purple text for secondary */
 
-    --muted: 338 90% 96%;     /* Very light pink, for muted backgrounds (e.g., chat bubbles) */
+    --muted: 338 90% 96%;     /* Very light pink, for muted backgrounds (e.g., AI chat bubbles) */
     --muted-foreground: 30 30% 40%; /* Softer brown for muted text */
 
     --accent: 325 75% 60%;    /* A more refined, slightly desaturated magenta/violet as accent */
@@ -29,15 +29,15 @@
     --destructive: 0 70% 60%; /* Standard Red */
     --destructive-foreground: 0 0% 98%; /* Light Text for Destructive */
 
-    --border: 338 60% 90%;     /* Softer, less saturated pink border */
-    --input: 338 100% 97%;    /* Very light pink input bg, distinct from card */
+    --border: 338 75% 93%;     /* Softer, very light pink border */
+    --input: 0 0% 99%;    /* Almost white input bg, distinct from card, relies on border */
     --ring: 6 85% 73%;         /* Primary color for rings (brain's peachy pink) */
 
     --chart-1: 6 85% 70%; /* Primary */
     --chart-2: 325 75% 60%; /* Accent */
-    --chart-3: 338 86% 80%; /* A mid-tone pink from the theme */
-    --chart-4: 6 85% 60%; /* Darker Primary variant */
-    --chart-5: 325 75% 50%; /* Darker Accent variant */
+    --chart-3: 338 80% 80%; /* A mid-tone pink from the theme */
+    --chart-4: 6 80% 65%; /* Slightly darker/desaturated Primary variant */
+    --chart-5: 325 70% 55%; /* Slightly darker/desaturated Accent variant */
 
     --radius: 0.75rem; 
 
@@ -52,7 +52,7 @@
     --sidebar-ring: 6 85% 73%;         /* Brain's Peachy Pink */
   }
 
-  /* Previous Dark Theme (Electric Blue/Violet) - kept under .dark class for potential future use */
+  /* Dark Theme (Electric Blue/Violet) - kept under .dark class for potential future use */
   .dark {
     --background: 210 14% 7%;
     --foreground: 0 0% 95%;
