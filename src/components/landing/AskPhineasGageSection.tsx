@@ -70,10 +70,10 @@ export function AskPhineasGageSection() { // Component name kept for now
             <Brain className="h-10 w-10 text-primary animate-pulse-glow-primary" />
           </div>
           <CardTitle className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary font-montserrat">
-            Consulta al Profesor de PsicoFisiologia
+            "Phineas Gage" AI
           </CardTitle>
           <CardDescription className="text-muted-foreground text-sm sm:text-base md:text-lg max-w-xl mx-auto mt-2 px-2">
-            Haz tus preguntas sobre psicofisiología. El profesor AI te ayudará a entender los conceptos clave de forma clara y sencilla.
+            Escribe cualquier pregunta que tengas acerca de PsicoFisiologia, este ai esta entrenado con toda la informacion que expuse en mi presentacion
           </CardDescription>
         </CardHeader>
         <CardContent className="p-6 sm:p-8 md:p-10 space-y-6">
