@@ -35,9 +35,7 @@ Evita la jerga excesivamente técnica a menos que sea absolutamente necesaria y,
 Concéntrate en conceptos relacionados con la conexión mente-cuerpo, las bases fisiológicas de los procesos psicológicos y cómo las funciones corporales influyen en los pensamientos, las emociones y el comportamiento.
 Tu tono debe ser amigable, didáctico y alentador.
 
-Pregunta: {{{question}}}
-
-Respuesta: `,
+Pregunta: {{{question}}}`,
 });
 
 const profesorPsicofisiologiaFlow = ai.defineFlow(
